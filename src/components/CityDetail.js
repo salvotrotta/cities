@@ -12,7 +12,7 @@ const CityDetail = ({ city }) => {
 
       <CardSection>
       <View>
-        <Image source={{uri: thumbnail_image}}/>
+        <Image style={styles.thumnailStyle} source={{uri: thumbnail_image}}/>
       </View>
       <View>
         <Text>{title}</Text>
@@ -28,5 +28,12 @@ const CityDetail = ({ city }) => {
     </Card>
   );
 };
+
+const styles = {
+  thumnailStyle:{
+    height: 50,
+    width: 50
+  }
+}
 
 export default CityDetail;

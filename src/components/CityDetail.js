@@ -9,9 +9,8 @@ const CityDetail = ({ city }) => {
 
   return (
     <Card>
-
       <CardSection>
-      <View>
+      <View style={styles.thumbnailContainerStyle}>
         <Image style={styles.thumnailStyle} source={{uri: thumbnail_image}}/>
       </View>
       <View>
@@ -33,7 +32,15 @@ const styles = {
   thumnailStyle:{
     height: 50,
     width: 50
-  }
+  },
+  thumbnailContainerStyle: {
+  marginLeft: 10,
+  margininRight: 10,
+  justifyContent: 'center',
+  alignItems: 'center'
 }
+}
+
+
 
 export default CityDetail;

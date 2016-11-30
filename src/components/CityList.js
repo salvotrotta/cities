@@ -20,12 +20,13 @@ class CityList extends Component {
   }
 
   renderCities() {
-    this.state.cities.map( city =>
-       <Text key={city.title}>{city.title}</Text>
+    return this.state.cities.map( city =>
+       <CityDetail key={city.title} city={city} />
     );
   }
 
   render() {
+    console.log(this.state);
     return (
       <ScrollView>
         {this.renderCities()}

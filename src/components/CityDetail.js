@@ -26,6 +26,7 @@ const CityDetail = ({ city }) => {
 
     </Card>
   );
+  
 };
 
 const styles = {
